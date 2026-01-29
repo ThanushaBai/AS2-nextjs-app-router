@@ -1,17 +1,24 @@
-import Link from "next/link";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to App Router Demo</p>
+    <div className="page">
+      <div className="card">
+        <div>
+          <h1>Welcome to MailFlow</h1>
 
-      <nav>
-        <ul>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+          <p>
+            MailFlow is a simple web application built using Next.js App Router.
+          </p>
+
+          <p>
+            It helps users manage and view email-based content in a clean and organized way.
+          </p>
+          
+          <p>
+            This project demonstrates folder-based routing, layouts, and navigation.
+          </p>
+        </div>
+
+      </div>
     </div>
   );
 }
